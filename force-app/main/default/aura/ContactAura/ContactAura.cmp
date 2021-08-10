@@ -2,8 +2,8 @@
     <h1>Show Contacts Aura Component</h1>
     <aura:attribute name="contacts" type="Contact[]"/>
     <aura:attribute name="newContact" type="Contact"
-                   default="{'sObjectType': 'Contact', 'FirstName': 'Shashi', 'LastName': 'Guru',
-                             'Email': 'shashi@hfs.com'}" />
+                   default="{'sObjectType': 'Contact', 'FirstName': 'Sumathi', 'LastName': 'Patil',
+                             'Email': 'sumathirpatil@gmail.com'}" />
     <lightning:button variant="brand" label="Get Contacts" 
             title="Get Contacts" onclick="{! c.jsGetContacts }" />
 
