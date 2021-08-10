@@ -1,3 +1,9 @@
-<aura:component>
-    Hello Praveen Kumar C
-</aura:component>	
+<aura:component implements="force:lightningQuickAction">
+    <aura:attribute name="person" type="String" default="World" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    Hello {!v.person} from Aura Component!!
+    <br/><lightning:input name="nameInput" aura:id="nameInputId" 
+            label="What's your name?" value="Enter your name"/>
+    <br/><lightning:button variant="brand" label="Say Hello" 
+            title="Say Hello Title" onclick="{! c.sayHello }" />
+</aura:component>
